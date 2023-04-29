@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Manager</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Manager</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Ckuper%5Cbox%5Csenior%20spring%5Cpython%20programming%5Cprojects%5Cproject%201%20csv%5Cmanager.py">c:\users\kuper\box\senior spring\python programming\projects\project 1 csv\manager.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-addrowfile"><strong>addrowfile</strong></a>(file, values, code='C')</dt><dd><tt>-&nbsp;Adds&nbsp;a&nbsp;row&nbsp;of&nbsp;values&nbsp;to&nbsp;the&nbsp;end&nbsp;of&nbsp;a&nbsp;CSV&nbsp;file.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;file&nbsp;(file):&nbsp;The&nbsp;file&nbsp;to&nbsp;manipulate<br>
+-&nbsp;values&nbsp;(list):&nbsp;The&nbsp;list&nbsp;of&nbsp;values&nbsp;to&nbsp;add&nbsp;into&nbsp;the&nbsp;CSV&nbsp;file<br>
+-&nbsp;code&nbsp;(str,&nbsp;optional):&nbsp;The&nbsp;data&nbsp;manipulation&nbsp;command<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;DataFrame:&nbsp;The&nbsp;DataFrame&nbsp;result&nbsp;of&nbsp;the&nbsp;row&nbsp;being&nbsp;added&nbsp;to&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;file.</tt></dd></dl>
+ <dl><dt><a name="-addrowframe"><strong>addrowframe</strong></a>(frame, values, rowid=-1, code='C')</dt><dd><tt>-&nbsp;Adds&nbsp;a&nbsp;row&nbsp;of&nbsp;values&nbsp;to&nbsp;a&nbsp;DataFrame.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;frame&nbsp;(DataFrame):&nbsp;The&nbsp;DataFrame&nbsp;to&nbsp;manipulate<br>
+-&nbsp;values&nbsp;(list):&nbsp;The&nbsp;list&nbsp;of&nbsp;values&nbsp;to&nbsp;add&nbsp;into&nbsp;the&nbsp;DataFrame<br>
+-&nbsp;rowid&nbsp;(int,&nbsp;optional):&nbsp;The&nbsp;specific&nbsp;row&nbsp;in&nbsp;the&nbsp;DataFrame&nbsp;to&nbsp;add&nbsp;the&nbsp;list&nbsp;of&nbsp;values&nbsp;to<br>
+-&nbsp;code&nbsp;(str,&nbsp;optional):&nbsp;The&nbsp;data&nbsp;manipulation&nbsp;command<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;DataFrame:&nbsp;The&nbsp;DataFrame&nbsp;with&nbsp;the&nbsp;added&nbsp;row</tt></dd></dl>
+ <dl><dt><a name="-clearfile"><strong>clearfile</strong></a>(file)</dt><dd><tt>-&nbsp;Wipes&nbsp;the&nbsp;CSV&nbsp;file&nbsp;clean&nbsp;by&nbsp;repeatedly&nbsp;deleting&nbsp;the&nbsp;last&nbsp;row&nbsp;in&nbsp;the&nbsp;file&nbsp;until&nbsp;no&nbsp;rows&nbsp;of&nbsp;data&nbsp;exist.&nbsp;Only&nbsp;the&nbsp;column&nbsp;headers&nbsp;exist.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;file&nbsp;(file):&nbsp;The&nbsp;file&nbsp;to&nbsp;wipe&nbsp;clean<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;DataFrame:&nbsp;The&nbsp;clean&nbsp;frame</tt></dd></dl>
+ <dl><dt><a name="-clearframe"><strong>clearframe</strong></a>(frame)</dt><dd><tt>-&nbsp;Wipes&nbsp;the&nbsp;DataFrame&nbsp;clean&nbsp;by&nbsp;repeatedly&nbsp;deleting&nbsp;the&nbsp;last&nbsp;row&nbsp;in&nbsp;the&nbsp;DataFrame&nbsp;until&nbsp;no&nbsp;rows&nbsp;of&nbsp;data&nbsp;exist.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;frame&nbsp;(DataFrame):&nbsp;The&nbsp;frame&nbsp;to&nbsp;wipe&nbsp;clean<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;DataFrame:&nbsp;The&nbsp;clean&nbsp;frame</tt></dd></dl>
+ <dl><dt><a name="-createdictionaryfrom"><strong>createdictionaryfrom</strong></a>(file)</dt><dd><tt>-&nbsp;Creates&nbsp;an&nbsp;empty&nbsp;dictionary&nbsp;from&nbsp;a&nbsp;file&nbsp;where&nbsp;the&nbsp;keys&nbsp;in&nbsp;the&nbsp;dictionary&nbsp;are&nbsp;the&nbsp;column&nbsp;headers&nbsp;extracted&nbsp;from&nbsp;the&nbsp;provided&nbsp;file.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;file&nbsp;(file):&nbsp;The&nbsp;file&nbsp;to&nbsp;create&nbsp;the&nbsp;dictionary&nbsp;from<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;dict:&nbsp;An&nbsp;empty&nbsp;dictionary&nbsp;with&nbsp;the&nbsp;column&nbsp;headers&nbsp;as&nbsp;the&nbsp;keys</tt></dd></dl>
+ <dl><dt><a name="-delfile"><strong>delfile</strong></a>(file, rowid=-1)</dt><dd><tt>-&nbsp;Deletes&nbsp;a&nbsp;row&nbsp;from&nbsp;the&nbsp;provided&nbsp;CSV&nbsp;file&nbsp;at&nbsp;a&nbsp;specific&nbsp;index.&nbsp;If&nbsp;the&nbsp;row&nbsp;is&nbsp;not&nbsp;specified,&nbsp;by&nbsp;default&nbsp;the&nbsp;last&nbsp;row&nbsp;in&nbsp;the&nbsp;file&nbsp;is&nbsp;deleted.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;file&nbsp;(file):&nbsp;The&nbsp;file&nbsp;to&nbsp;delete&nbsp;the&nbsp;row&nbsp;from<br>
+-&nbsp;rowid&nbsp;(int,&nbsp;optional):&nbsp;The&nbsp;row&nbsp;number&nbsp;to&nbsp;delete.&nbsp;If&nbsp;the&nbsp;row&nbsp;number&nbsp;is&nbsp;unspecified,&nbsp;the&nbsp;last&nbsp;row&nbsp;in&nbsp;the&nbsp;file&nbsp;is&nbsp;deleted.</tt></dd></dl>
+ <dl><dt><a name="-delrow"><strong>delrow</strong></a>(frame, rowid=-1)</dt><dd><tt>-&nbsp;Deletes&nbsp;a&nbsp;row&nbsp;from&nbsp;the&nbsp;provided&nbsp;DataFrame&nbsp;at&nbsp;a&nbsp;specific&nbsp;index.&nbsp;If&nbsp;the&nbsp;row&nbsp;is&nbsp;not&nbsp;specified,&nbsp;by&nbsp;default&nbsp;the&nbsp;last&nbsp;row&nbsp;in&nbsp;the&nbsp;DataFrame&nbsp;is&nbsp;deleted.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;frame&nbsp;(DataFrame):&nbsp;The&nbsp;frame&nbsp;to&nbsp;delete&nbsp;the&nbsp;row&nbsp;from<br>
+-&nbsp;rowid&nbsp;(int,&nbsp;optional):&nbsp;The&nbsp;row&nbsp;number&nbsp;to&nbsp;delete.&nbsp;If&nbsp;the&nbsp;row&nbsp;number&nbsp;is&nbsp;unspecified,&nbsp;the&nbsp;last&nbsp;row&nbsp;in&nbsp;the&nbsp;DataFrame&nbsp;is&nbsp;deleted.<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;DataFrame:&nbsp;The&nbsp;frame&nbsp;with&nbsp;the&nbsp;row&nbsp;deleted</tt></dd></dl>
+ <dl><dt><a name="-extractkeys"><strong>extractkeys</strong></a>(dictionary)</dt><dd><tt>-&nbsp;Retrieves&nbsp;a&nbsp;list&nbsp;of&nbsp;keys&nbsp;from&nbsp;a&nbsp;given&nbsp;dictionary.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;dictionary&nbsp;(dict):&nbsp;The&nbsp;dictionary&nbsp;to&nbsp;extract&nbsp;keys&nbsp;from<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;list:&nbsp;The&nbsp;list&nbsp;of&nbsp;keys&nbsp;in&nbsp;the&nbsp;dictionary</tt></dd></dl>
+ <dl><dt><a name="-extractkeysff"><strong>extractkeysff</strong></a>(file)</dt><dd><tt>-&nbsp;Creates&nbsp;a&nbsp;dictionary&nbsp;from&nbsp;a&nbsp;specified&nbsp;file,&nbsp;then&nbsp;uses&nbsp;that&nbsp;dictionary&nbsp;to&nbsp;extract&nbsp;the&nbsp;keys,&nbsp;which&nbsp;are&nbsp;the&nbsp;column&nbsp;headers&nbsp;from&nbsp;the&nbsp;file.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;file&nbsp;(file):&nbsp;The&nbsp;file&nbsp;to&nbsp;extract&nbsp;the&nbsp;keys&nbsp;from<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;list:&nbsp;The&nbsp;list&nbsp;of&nbsp;keys&nbsp;from&nbsp;the&nbsp;file</tt></dd></dl>
+ <dl><dt><a name="-numrows"><strong>numrows</strong></a>(frame)</dt><dd><tt>-&nbsp;Counts&nbsp;the&nbsp;number&nbsp;of&nbsp;rows&nbsp;of&nbsp;data&nbsp;(besides&nbsp;the&nbsp;column&nbsp;headers)&nbsp;of&nbsp;the&nbsp;given&nbsp;DataFrame.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;frame&nbsp;(DataFrame):&nbsp;The&nbsp;DataFrame&nbsp;to&nbsp;read<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;int:&nbsp;The&nbsp;number&nbsp;of&nbsp;rows&nbsp;in&nbsp;the&nbsp;DataFrame</tt></dd></dl>
+ <dl><dt><a name="-numrowsif"><strong>numrowsif</strong></a>(file)</dt><dd><tt>-&nbsp;Counts&nbsp;the&nbsp;number&nbsp;of&nbsp;rows&nbsp;of&nbsp;data&nbsp;(besides&nbsp;the&nbsp;column&nbsp;headers)&nbsp;of&nbsp;the&nbsp;given&nbsp;CSV&nbsp;file.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;file&nbsp;(file):&nbsp;The&nbsp;CSV&nbsp;file&nbsp;to&nbsp;read<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;int:&nbsp;The&nbsp;number&nbsp;of&nbsp;rows&nbsp;in&nbsp;the&nbsp;CSV&nbsp;file</tt></dd></dl>
+ <dl><dt><a name="-readfrom"><strong>readfrom</strong></a>(file, *series)</dt><dd><tt>-&nbsp;Creates&nbsp;a&nbsp;data&nbsp;frame&nbsp;from&nbsp;a&nbsp;CSV&nbsp;file&nbsp;using&nbsp;only&nbsp;specific&nbsp;columns.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;file&nbsp;(file):&nbsp;The&nbsp;CSV&nbsp;file&nbsp;to&nbsp;be&nbsp;read&nbsp;from<br>
+-&nbsp;*series&nbsp;(list):&nbsp;The&nbsp;list&nbsp;of&nbsp;columns&nbsp;to&nbsp;read<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;DataFrame:&nbsp;A&nbsp;Pandas&nbsp;DataFrame&nbsp;containing&nbsp;the&nbsp;rows&nbsp;&amp;&nbsp;columns&nbsp;of&nbsp;the&nbsp;data&nbsp;selected.</tt></dd></dl>
+ <dl><dt><a name="-readfromw"><strong>readfromw</strong></a>(file, rowid=-1)</dt><dd><tt>-&nbsp;Creates&nbsp;a&nbsp;data&nbsp;frame&nbsp;from&nbsp;a&nbsp;CSV&nbsp;file&nbsp;or&nbsp;a&nbsp;specific&nbsp;row&nbsp;of&nbsp;a&nbsp;CSV&nbsp;file&nbsp;using&nbsp;ALL&nbsp;columns.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;file&nbsp;(file):&nbsp;The&nbsp;CSV&nbsp;file&nbsp;to&nbsp;be&nbsp;read&nbsp;from<br>
+-&nbsp;rowid&nbsp;(int):&nbsp;The&nbsp;row&nbsp;of&nbsp;the&nbsp;CSV&nbsp;file&nbsp;to&nbsp;read.&nbsp;If&nbsp;the&nbsp;rowid&nbsp;is&nbsp;unspecified,&nbsp;the&nbsp;entire&nbsp;file&nbsp;is&nbsp;read.<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;DataFrame:&nbsp;A&nbsp;Pandas&nbsp;DataFrame&nbsp;containing&nbsp;the&nbsp;rows&nbsp;&amp;&nbsp;columns&nbsp;of&nbsp;the&nbsp;entire&nbsp;CSV&nbsp;file&nbsp;or&nbsp;specific&nbsp;row&nbsp;of&nbsp;the&nbsp;CSV&nbsp;file.</tt></dd></dl>
+ <dl><dt><a name="-readheadersw"><strong>readheadersw</strong></a>(file)</dt><dd><tt>-&nbsp;Extracts&nbsp;the&nbsp;column&nbsp;headers&nbsp;from&nbsp;the&nbsp;CSV&nbsp;file.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;file&nbsp;(file):&nbsp;The&nbsp;CSV&nbsp;file&nbsp;to&nbsp;be&nbsp;read&nbsp;from<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;list:&nbsp;The&nbsp;list&nbsp;of&nbsp;column&nbsp;headers</tt></dd></dl>
+ <dl><dt><a name="-upfile"><strong>upfile</strong></a>(file, rowid, values, code='C')</dt><dd><tt>-&nbsp;Updates&nbsp;a&nbsp;specific&nbsp;row&nbsp;of&nbsp;a&nbsp;CSV&nbsp;file&nbsp;with&nbsp;new&nbsp;values&nbsp;by&nbsp;replacing&nbsp;the&nbsp;existing&nbsp;list&nbsp;of&nbsp;values&nbsp;with&nbsp;a&nbsp;new&nbsp;list&nbsp;of&nbsp;values.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;file&nbsp;(file):&nbsp;The&nbsp;file&nbsp;to&nbsp;manipulate<br>
+-&nbsp;rowid&nbsp;(int):&nbsp;The&nbsp;specific&nbsp;row&nbsp;to&nbsp;replace<br>
+-&nbsp;values&nbsp;(list):&nbsp;The&nbsp;list&nbsp;of&nbsp;values&nbsp;to&nbsp;replace&nbsp;the&nbsp;current&nbsp;list&nbsp;of&nbsp;values&nbsp;with<br>
+-&nbsp;code&nbsp;(str,&nbsp;optional):&nbsp;The&nbsp;data&nbsp;manipulation&nbsp;command<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;DataFrame:&nbsp;The&nbsp;DataFrame&nbsp;which&nbsp;was&nbsp;updated</tt></dd></dl>
+ <dl><dt><a name="-upframew"><strong>upframew</strong></a>(frame, rowid, values, code='C')</dt><dd><tt>-&nbsp;Updates&nbsp;a&nbsp;specific&nbsp;row&nbsp;of&nbsp;a&nbsp;DataFrame&nbsp;with&nbsp;new&nbsp;values&nbsp;by&nbsp;replacing&nbsp;the&nbsp;existing&nbsp;list&nbsp;of&nbsp;values&nbsp;with&nbsp;a&nbsp;new&nbsp;list&nbsp;of&nbsp;values.<br>
+&nbsp;<br>
+###&nbsp;Parameters:<br>
+-&nbsp;frame&nbsp;(DataFrame):&nbsp;The&nbsp;DataFrame&nbsp;to&nbsp;manipulate<br>
+-&nbsp;rowid&nbsp;(int):&nbsp;The&nbsp;specific&nbsp;row&nbsp;to&nbsp;replace<br>
+-&nbsp;values&nbsp;(list):&nbsp;The&nbsp;list&nbsp;of&nbsp;values&nbsp;to&nbsp;replace&nbsp;the&nbsp;current&nbsp;list&nbsp;of&nbsp;values&nbsp;with<br>
+-&nbsp;code&nbsp;(str,&nbsp;optional):&nbsp;The&nbsp;data&nbsp;manipulation&nbsp;command<br>
+&nbsp;<br>
+###&nbsp;Returns:<br>
+-&nbsp;DataFrame:&nbsp;The&nbsp;DataFrame&nbsp;which&nbsp;was&nbsp;updated</tt></dd></dl>
+</td></tr></table>
+</body></html>
